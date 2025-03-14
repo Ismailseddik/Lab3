@@ -5,7 +5,15 @@ public class CreateUserDTO {
     private String username;
     private String password;
     private String phoneNumber;
-
+    @Override
+    public String toString() {
+        return "CreateUserDTO{" +
+                "email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
     public String getEmail() {
         return email;
     }
